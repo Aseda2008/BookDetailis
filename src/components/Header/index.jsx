@@ -1,35 +1,40 @@
 import React from "react";
 import logo from "../../assets/img/logo.svg"
-import { IoMdSearch } from "react-icons/io";
+import { GoSearch } from "react-icons/go";
 import { BsCart3 } from "react-icons/bs";
 import { FaRegUser } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 
 
 function Header(){
     return (
+      
        <div id="header">
       <div className="container">
         <div className="header">
-<img src={logo} alt="img" />
+<Link to={"/"}>
+<img src={logo} alt="img" /></Link>
     <div className="header--nav">
-       <div className="header--nav__search">
-       <input type="text" placeholder="Search here" />
-      <a><IoMdSearch />
+   <div className="header--nav__search">
+   <input type="text" placeholder="Search here" />
+      <a><GoSearch />
       </a>
-      <div className="header--nav__search--block">
+   </div>
+      <Link to={"/basket"}>
+      <div className="header--nav__block">
         <a>
         <BsCart3 />
         </a>
         <p>Корзина</p>
-      </div>
-      <div className="header--nav__search--block">
+      </div></Link>
+    <Link to={"/admin"}>
+    <div className="header--nav__block">
         <a>
         <FaRegUser />
         </a>
         <p>Админ</p>
-      </div>
-       </div>
+      </div></Link>
     </div>
         </div>
       </div>
