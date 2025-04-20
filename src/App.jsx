@@ -5,6 +5,8 @@ import Header from './components/Header'
 import Home from './components/Home';
 import Basket from './components/Basket';
 import { Route, Routes } from 'react-router-dom';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 function App() {
   let router = [
     {

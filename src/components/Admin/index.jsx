@@ -21,21 +21,19 @@ function Admin(){
     return(
         <div id="admin">
             <div className="container">
-                <div className="admin">
+              <div className="admin">
+                <input type="text" placeholder="Upload photo" onChange={(e) => setProUrl(e.target.value)}/>
+                 <div className="admin--block">
                     <input type="text" placeholder="Product Name"
                     onChange={(e) => setProName(e.target.value)}/>
-                    <input type="text" placeholder="Upload photo" onChange={(e) => setProUrl(e.target.value)}/>
-                    <div className="admin--search">
+                    <div className="admin--block__search">
                     <input type="text" placeholder="Category" onChange={(e)=> setProCategory(e.target.value)}/>
                     <input type="text" placeholder="Price" onChange={(e) => setProprice(e.target.value)}/>
-
                     </div>
-                    <div className="admin--des">
                     <textarea
   placeholder="Product description..."
-
   style={{
-    width: "400px",
+    width: "242px",
     padding: "10px",
     fontSize: "14px",
     outline: "none",
@@ -48,10 +46,12 @@ function Admin(){
   }}
   onChange={(e) => setProDes(e.target.value)}
 />
-                    </div>
-                    <button onClick={() => setProduct()}>save</button>
+                </div>
+                
                 </div>
             </div>
+            <center><button onClick={() => setProduct()}>save</button></center>
+
         </div>
     )
 }

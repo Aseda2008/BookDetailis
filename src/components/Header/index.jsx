@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/img/logo.svg"
 import { GoSearch } from "react-icons/go";
 import { BsCart3 } from "react-icons/bs";
@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 
 
 function Header(){
+  const [model,setmodel] = useState(false)
     return (
-      
        <div id="header">
       <div className="container">
         <div className="header">

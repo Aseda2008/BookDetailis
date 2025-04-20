@@ -1,22 +1,37 @@
 #admin{
     padding: 30px ;
     margin-top: 80px;
-    .admin{
+    button{
+        width: 150px;
+        height: 50px;
+        background: #010049;
+        border-radius: 5px;
+        font-size: 15px;
+        color: white;
+        margin-top: 20px;
+    }
+   .admin{
+    display: flex;
+    align-items:start;
+    justify-content: center;
+    gap: 30px;
+    input{
+        // width: 200px;
+        // height: 200px;
+        border-radius: 5px;
+            border: 1.4px solid #010049;
+            outline: none;
+            padding: 10px 0 170px 10px;
+    }
+    &--block{
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         gap: 25px;
-        button{
-            width: 150px;
-            height: 50px;
-            background: #010049;
-            border-radius: 5px;
-            font-size: 15px;
-            color: white;
-        }
+    
         input{
-            width: 400px;
+            width: 242px;
             height: 45px;
             border-radius: 5px;
             border: 1.4px solid #010049;
@@ -24,11 +39,11 @@
             padding: 0 10px;
             position: relative;
         }
-        &--search{
+        &__search{
             display: flex;
             gap: 12px;
             input{
-                width: 183px;
+                width: 103px;
                 height: 45px;
                 border-radius: 5px;
                 border: 1.4px solid #010049;
@@ -37,19 +52,6 @@
                 position: relative;
             } 
         }
-        &--des{
-            input{
-                width: 400px;
-                height: 195px;
-                border-radius: 5px;
-                border: 1px solid #010049;
-                outline: none;
-                position: relative;
-                &::placeholder{
-                    margin-top: 0;
-                }
-                
-            }  
-        }
     }
+   }
 }
