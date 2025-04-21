@@ -1,3 +1,6 @@
-@import "../src/assets/style/Header.scss";
-@import "../src/assets/style/Admin.scss";
-@import "../src/assets/style/Book.scss";
+@use "../src/assets/style/Header.scss";
+@use "../src/assets/style/Admin.scss";
+@use "../src/assets/style/Category.scss";
+@use "../src/assets/style/BookCard.scss";
+@use "../src/assets/style/Footer.scss";
+@use "../src/assets/style/Create.scss";
