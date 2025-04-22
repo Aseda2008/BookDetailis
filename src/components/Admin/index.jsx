@@ -39,11 +39,13 @@ function Admin() {
               onChange={(e) => setProName(e.target.value)}
             />
             <div className="admin--block__search">
-              <input
-                type="text"
-                placeholder="Category"
-                onChange={(e) => setProCategory(e.target.value)}
-              />
+             <select onChange={(e) => setProCategory(e.target.value)}>
+             <option value="">Category</option>
+              <option value="Детектив">Детектив</option>
+              <option value="Фантастика">Фантастика</option>
+              <option value="Приключения">Приключения</option>
+              <option value="Научная">Научная</option>
+             </select>
               <input
                 type="text"
                 placeholder="Price"

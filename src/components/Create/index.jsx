@@ -18,22 +18,31 @@ const CreatAdmin = () => {
                   <img src={el.url} alt="img" />
                   <div className="book--blocks__block--salt">
                     <h4>{el.price}сом</h4>
+
                     <a>
                       <IoCart />
                     </a>
                   </div>
                   <p>{el.name}</p>
-                </div>
-              ))
-            ) : (
-              <img src={empty} alt="img" />
-            )}
-          </div>
-          <center>
+                  <center>
             <button onClick={() => setCount(count + 5)}>
               Показать ещё <HiArrowLongDown />
             </button>
           </center>
+                </div>
+         
+              ))
+            ) : (
+              <img
+                src={empty}
+                alt="img"
+                style={{
+                  margin: "7px 410px",
+                  width: "362px",
+                }}
+              />
+            )}
+            </div>
         </div>
       </div>
     </div>

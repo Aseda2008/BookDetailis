@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 #header {
-  padding: 10px 0;
+  padding: 15px 0;
   background: #010049;
   .header {
     display: flex;
@@ -23,7 +23,7 @@
           position: absolute;
           right: 319px;
           font-size: 20px;
-          top: 17px;
+          top: 23px;
         }
       }
       &__block {
@@ -42,4 +42,26 @@
       }
     }
   }
+
 }
+// .modalbg {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   background: rgba(255, 255, 255, 0.484);
+//   z-index: 2;
+//   &--modolblock {
+//     top: 20%;
+//     right: 34%;
+//     background: rgb(242, 51, 51);
+//     z-index: 1;
+//     border-radius: 20px;
+//     -webkit-box-shadow: -1px 1px 4px 0px rgba(66, 68, 90, 1);
+//     -moz-box-shadow: -1px 1px 4px 0px rgba(66, 68, 90, 1);
+//     box-shadow: -1px 1px 4px 0px rgba(66, 68, 90, 1);
+
+//     input {
+//       width: 90%;
+//     }
+//   }
+// }
