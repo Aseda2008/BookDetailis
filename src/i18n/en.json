@@ -1,0 +1,19 @@
+{
+    "home": "Home",
+    "basket": "Basket",
+    "checkout": "Checkout",
+    "contactInfo": "Contact Information",
+    "fullName": "Full Name*",
+    "phone": "Phone*",
+    "payment": "Payment",
+    "cash": "Pay with cash upon delivery",
+    "card": "Pay with bank card",
+    "pay": "Pay",
+    "delivery": "Delivery",
+    "chooseDelivery": "Choose a convenient delivery method for this order.",
+    "pickup": "Pickup",
+    "addressPlaceholder": "Region, city (district, village), street, house #, apt. #*",
+    "total": "Total amount:",
+    "notPaid": "Not yet paid"
+  }
+  

@@ -6,9 +6,12 @@ import { FaRegUser } from "react-icons/fa6";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { MdCreateNewFolder } from "react-icons/md";
 import { LiaWindowCloseSolid } from "react-icons/lia";
+import { useTranslation } from "react-i18next";
+
 import { IoEyeOffOutline, IoEyeOutline } from "react-icons/io5";
 
 function Header() {
+  const { i18n } = useTranslation();
   const [modal, setModal] = useState(false);
   const [eye, setEye] = useState(false);
   const [password, setPassword] = useState("");
@@ -39,13 +42,15 @@ function Header() {
                 <GoSearch />
               </a>
             </div>
+            {location.pathname !== "/basket" && (
+              <Link to={"/basket"}>
+                <div className="header--nav__block">
+                  <BsCart3 />
+                  <p>Корзина</p>
+                </div>
+              </Link>
+            )}
 
-            <Link to={"/basket"}>
-              <div className="header--nav__block">
-                <BsCart3 />
-                <p>Корзина</p>
-              </div>
-            </Link>
             {location.pathname !== "/Admin" && (
               <div
                 className="header--nav__block"
@@ -64,6 +69,20 @@ function Header() {
                 <p>добавлен</p>
               </div>
             </Link>
+            <select
+  onChange={(e) => i18n.changeLanguage(e.target.value)}
+  style={{
+    padding: "5px 10px",
+    borderRadius: "5px",
+    border: "1px solid #ccc",
+    cursor: "pointer",
+    marginLeft: "15px"
+  }}
+>
+  <option value="ky">Кыргызча</option>
+  <option value="ru">Русский</option>
+  <option value="en">English</option>
+</select>
           </div>
         </div>
         {modal && (
