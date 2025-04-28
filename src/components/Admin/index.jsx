@@ -33,12 +33,9 @@ function Admin() {
       <div className="container">
         <div className="admin">
           <input
-            type="file"
-            onChange={onChange}
-            className="hidden"
-            id="image-upload"
-            accept="image/*"
+            type="text"
             placeholder="Upload photo"
+            onChange={(e) => setProUrl(e.target.value)}
           />
           <div className="admin--block">
             <input

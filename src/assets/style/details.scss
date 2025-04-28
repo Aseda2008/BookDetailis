@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+#detail {
+  margin: 20px 0;
+  .detail {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    img {
+      width: 250px;
+      height: 360px;
+      border-radius: 10px;
+    }
+
+    &--card {
+      h1 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+        margin-bottom: 2px;
+      }
+      h2 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        margin: 10px 0;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin: 14px 0;
+        span {
+          font-family: Nunito;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          margin-bottom: 10px;
+        }
+      }
+      &__count {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 60px;
+        justify-content: space-between;
+        margin: 5px 0;
+        width: 90px;
+        height: 30px;
+        border: #010049 1.5px solid;
+        margin: 14px 0;
+        h2 {
+          font-size: 13px;
+          background: white;
+          color: #010049;
+          
+        }
+        h3 {
+          font-size: 13px;
+          background: #010049;
+          color: white;
+          padding:0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+          height: 100%; 
+        }
+      }
+      &__btn {
+        display: flex;
+        flex-direction: column;
+        // margin-top: 192px;
+        button {
+          width: 170px;
+          padding: 8px 20px;
+          border: 2px #010049 solid;
+          background: none;
+          color: #010049;
+          margin-bottom: 20px;
+          transition: 2s;
+          outline: none;
+          &:hover {
+            background: #010049;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
